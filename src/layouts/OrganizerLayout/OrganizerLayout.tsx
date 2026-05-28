@@ -30,7 +30,13 @@ const OrganizerLayout = ({ children }: OrganizerLayoutProps) => {
       <aside className="organizer-sidebar">
         <div>
           <div className="organizer-sidebar-logo">
-            <div className="organizer-logo-icon">E</div>
+            <div className="organizer-logo-icon">
+              <img
+                src="/src/assets/logo.png"
+                alt="Evently logo"
+                className="logo-img"
+              />
+            </div>
             <h2>Evently</h2>
           </div>
 
@@ -78,10 +84,7 @@ const OrganizerLayout = ({ children }: OrganizerLayoutProps) => {
 
             <div className="organizer-menu-title">Account</div>
 
-            <Link
-              to="/organizer/profile"
-              className="organizer-menu-item"
-            >
+            <Link to="/organizer/profile" className="organizer-menu-item">
               <User size={20} />
               Profile
             </Link>

@@ -11,8 +11,17 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <div className="footer-logo" onClick={() => scrollToSection("home")}>
-              <div className="footer-icon">E</div>
+            <div
+              className="footer-logo"
+              onClick={() => scrollToSection("home")}
+            >
+              <div className="footer-icon">
+                <img
+                  src="/src/assets/logo.png"
+                  alt="Evently logo"
+                  className="logo-img"
+                />
+              </div>
               <div>
                 <h3>Evently</h3>
                 <p>Book your moment</p>
@@ -20,7 +29,8 @@ const Footer = () => {
             </div>
 
             <p className="footer-description">
-              Discover, book and manage events with one simple and modern platform.
+              Discover, book and manage events with one simple and modern
+              platform.
             </p>
           </div>
 
@@ -30,7 +40,9 @@ const Footer = () => {
               <li onClick={() => scrollToSection("home")}>Home</li>
               <li onClick={() => scrollToSection("about")}>About</li>
               <li onClick={() => scrollToSection("events")}>Events</li>
-              <li onClick={() => scrollToSection("organizers")}>For Organizers</li>
+              <li onClick={() => scrollToSection("organizers")}>
+                For Organizers
+              </li>
             </ul>
           </div>
 

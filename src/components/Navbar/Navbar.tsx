@@ -64,7 +64,13 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar-custom">
           <div className="navbar-logo" onClick={() => scrollToSection("home")}>
-            <div className="logo-icon">E</div>
+            <div className="logo-icon">
+              <img
+                src="/src/assets/logo.png"
+                alt="Evently logo"
+                className="logo-img"
+              />
+            </div>
 
             <div>
               <h4>Evently</h4>
@@ -110,37 +116,37 @@ const Navbar = () => {
           </ul>
 
           <div className="navbar-actions">
-  {user ? (
-    <>
-      <button
-        className="btn-login"
-        onClick={() =>
-          navigate(
-            user.role === "participant"
-              ? "/user/dashboard"
-              : "/organizer/dashboard"
-          )
-        }
-      >
-        Dashboard
-      </button>
+            {user ? (
+              <>
+                <button
+                  className="btn-login"
+                  onClick={() =>
+                    navigate(
+                      user.role === "participant"
+                        ? "/user/dashboard"
+                        : "/organizer/dashboard",
+                    )
+                  }
+                >
+                  Dashboard
+                </button>
 
-      <button className="btn-register" onClick={handleLogout}>
-        Logout
-      </button>
-    </>
-  ) : (
-    <>
-      <Link to="/login" className="btn-login">
-        Login
-      </Link>
+                <button className="btn-register" onClick={handleLogout}>
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/login" className="btn-login">
+                  Login
+                </Link>
 
-      <Link to="/register" className="btn-register">
-        Register
-      </Link>
-    </>
-  )}
-</div>
+                <Link to="/register" className="btn-register">
+                  Register
+                </Link>
+              </>
+            )}
+          </div>
         </nav>
       </div>
     </header>

@@ -38,6 +38,13 @@
   margin: 0;
 }
 
+.logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
 .organizer-sidebar-user {
   padding: 18px;
   border-radius: 18px;

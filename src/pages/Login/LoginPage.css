@@ -42,6 +42,13 @@
   color: #18122b;
 }
 
+.logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
 .auth-card h1 {
   font-size: 38px;
   font-weight: 800;

@@ -17,9 +17,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const user = JSON.parse(
-    localStorage.getItem("user") || "null"
-  );
+  const user = JSON.parse(localStorage.getItem("user") || "null");
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -34,17 +32,18 @@ const UserLayout = ({ children }: UserLayoutProps) => {
         <div className="sidebar-top">
           <div className="sidebar-logo">
             <div className="logo-icon">
-              E
+              <img
+                src="/src/assets/logo.png"
+                alt="Evently logo"
+                className="logo-img"
+              />
             </div>
 
             <h2>Evently</h2>
           </div>
 
           <div className="sidebar-user">
-            <h4>
-              {user?.firstName || "User"}
-            </h4>
-            
+            <h4>{user?.firstName || "User"}</h4>
 
             <span>Participant</span>
           </div>
@@ -62,48 +61,32 @@ const UserLayout = ({ children }: UserLayoutProps) => {
               Dashboard
             </Link>
 
-            <Link
-              to="/user/events"
-              className="menu-item"
-            >
+            <Link to="/user/events" className="menu-item">
               <CalendarDays size={20} />
               Browse Events
             </Link>
 
-            <Link
-              to="/user/bookings"
-              className="menu-item"
-            >
+            <Link to="/user/bookings" className="menu-item">
               <Ticket size={20} />
               My Bookings
             </Link>
 
-            <div className="menu-title">
-              Account
-            </div>
+            <div className="menu-title">Account</div>
 
-            <Link
-              to="/user/profile"
-              className="menu-item"
-            >
+            <Link to="/user/profile" className="menu-item">
               <User size={20} />
               Profile
             </Link>
           </nav>
         </div>
 
-        <button
-          className="logout-btn"
-          onClick={handleLogout}
-        >
+        <button className="logout-btn" onClick={handleLogout}>
           <LogOut size={18} />
           Logout
         </button>
       </aside>
 
-      <main className="dashboard-content">
-        {children}
-      </main>
+      <main className="dashboard-content">{children}</main>
     </div>
   );
 };

@@ -52,3 +52,10 @@
   font-weight: 700;
   font-size: 14px;
 }
+
+.logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+}

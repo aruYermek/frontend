@@ -120,7 +120,13 @@ const RegisterPage = () => {
     <div className="auth-page">
       <div className="auth-card register-card">
         <Link to="/" className="auth-logo">
-          <div className="auth-logo-icon">E</div>
+          <div className="auth-logo-icon">
+            <img
+              src="/src/assets/logo.png"
+              alt="Evently logo"
+              className="logo-img"
+            />
+          </div>
           <span>Evently</span>
         </Link>
 

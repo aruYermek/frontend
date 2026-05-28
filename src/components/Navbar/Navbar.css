@@ -52,6 +52,13 @@
   color: #777;
 }
 
+.logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
 .navbar-menu {
   display: flex;
   align-items: center;
