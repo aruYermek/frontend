@@ -5,6 +5,7 @@ import { getAllEvents } from "../../services/eventService";
 import { bookEvent } from "../../services/bookingService";
 import "./UserEvents.css";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 type EventType = {
   _id: string;
@@ -47,9 +48,9 @@ const UserEvents = () => {
 
       await fetchEvents();
 
-      alert("Event booked successfully!");
+      toast.success("Event booked successfully!");
     } catch (err: any) {
-      alert(err.response?.data?.message || "Failed to book event");
+      toast.error(err.response?.data?.message || "Failed to book event");
     }
   };
 

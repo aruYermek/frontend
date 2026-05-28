@@ -7,6 +7,7 @@ import { getEventById } from "../../services/eventService";
 import { bookEvent } from "../../services/bookingService";
 
 import "./UserEventDetails.css";
+import toast from "react-hot-toast";
 
 type EventType = {
   _id: string;
@@ -46,10 +47,10 @@ const UserEventDetails = () => {
 
     try {
       await bookEvent(id);
-      alert("Event booked successfully!");
+      toast.success("Event booked successfully!");
       navigate("/user/bookings");
     } catch (err: any) {
-      alert(err.response?.data?.message || "Failed to book event");
+      toast.error(err.response?.data?.message || "Failed to book event");
     }
   };
 
