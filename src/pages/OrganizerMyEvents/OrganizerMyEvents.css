@@ -1,0 +1,119 @@
+.my-events-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #18122b;
+}
+
+.my-events-header p {
+  margin-top: 10px;
+  color: #6b687a;
+  font-size: 18px;
+}
+
+.my-events-list {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.organizer-event-card {
+  background: white;
+  border-radius: 26px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 180px 1fr 110px auto;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 16px 40px rgba(80, 60, 160, 0.08);
+}
+
+.organizer-event-card img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.organizer-event-info span {
+  color: #7c3aed;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.organizer-event-info h3 {
+  margin-top: 8px;
+  font-size: 23px;
+  font-weight: 800;
+  color: #18122b;
+}
+
+.organizer-event-info p {
+  margin-top: 6px;
+  color: #6b687a;
+}
+
+.organizer-event-info small {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+}
+
+.organizer-event-stats {
+  text-align: center;
+}
+
+.organizer-event-stats strong {
+  font-size: 24px;
+  color: #18122b;
+}
+
+.organizer-event-stats p {
+  margin: 0;
+  color: #777;
+}
+
+.organizer-event-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.organizer-event-actions button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  background: #f3edff;
+  color: #7c3aed;
+}
+
+.participants-btn {
+  background: #eef5ff;
+  color: #3b82f6;
+}
+
+.delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+@media (max-width: 992px) {
+  .organizer-event-card {
+    grid-template-columns: 1fr;
+  }
+
+  .organizer-event-card img {
+    width: 100%;
+  }
+
+  .organizer-event-stats {
+    text-align: left;
+  }
+}

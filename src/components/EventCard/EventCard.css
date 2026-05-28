@@ -1,0 +1,115 @@
+.event-card {
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(80, 60, 160, 0.1);
+  transition: 0.25s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(80, 60, 160, 0.16);
+}
+
+.event-image-wrapper {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-category {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 8px 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #7c3aed;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.event-content {
+  padding: 26px;
+}
+
+.event-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #18122b;
+  margin-bottom: 10px;
+}
+
+.event-subtitle {
+  color: #6b687a;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #6b687a;
+  margin-bottom: 24px;
+}
+
+.event-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.event-footer strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: #18122b;
+}
+
+.event-footer button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.event-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.details-btn,
+.book-btn {
+  height: 44px;
+  width: 100%;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  white-space: nowrap;
+}
+
+.details-btn:hover {
+  background: #f3edff;
+}
+
+.book-btn:hover {
+  opacity: 0.9;
+}

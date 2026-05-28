@@ -1,0 +1,49 @@
+.participants-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #18122b;
+}
+
+.participants-header p {
+  margin-top: 10px;
+  color: #6b687a;
+  font-size: 18px;
+}
+
+.participants-table-card {
+  margin-top: 35px;
+  background: white;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(80, 60, 160, 0.08);
+  overflow-x: auto;
+}
+
+.participants-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.participants-table th {
+  text-align: left;
+  padding: 16px;
+  color: #6b687a;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.participants-table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #302a45;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3edff;
+  color: #7c3aed;
+  font-weight: 800;
+  text-transform: capitalize;
+}

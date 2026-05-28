@@ -1,0 +1,143 @@
+.organizers-section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.organizers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.organizers-content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #18122b;
+  line-height: 1.15;
+  margin-top: 20px;
+}
+
+.organizers-content p {
+  margin-top: 24px;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.organizer-features {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.organizer-features div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #3f3a52;
+  font-weight: 700;
+}
+
+.organizer-features svg {
+  color: #7c3aed;
+}
+
+.organizer-btn {
+  margin-top: 38px;
+  border: none;
+  padding: 18px 34px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 16px 35px rgba(124, 58, 237, 0.25);
+}
+
+.organizers-card {
+  min-height: 520px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  padding: 38px;
+  box-shadow: 0 24px 70px rgba(124, 58, 237, 0.22);
+}
+
+.mini-dashboard {
+  height: 100%;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+  padding: 28px;
+}
+
+.mini-header {
+  display: flex;
+  gap: 8px;
+}
+
+.mini-header span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.mini-stat {
+  margin-top: 40px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #f8f5ff;
+}
+
+.mini-stat p {
+  margin: 0;
+  color: #777;
+}
+
+.mini-stat h3 {
+  margin: 8px 0 0;
+  font-size: 44px;
+  font-weight: 900;
+  color: #18122b;
+}
+
+.mini-list {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mini-list div {
+  padding: 18px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mini-list strong {
+  color: #18122b;
+}
+
+.mini-list span {
+  color: #777;
+}
+
+@media (max-width: 992px) {
+  .organizers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .organizers-content h2 {
+    font-size: 38px;
+  }
+
+  .organizers-card {
+    min-height: auto;
+  }
+}

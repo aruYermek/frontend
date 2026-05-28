@@ -1,0 +1,54 @@
+.register-card {
+  max-width: 620px;
+}
+
+.role-tabs {
+  margin-top: 28px;
+  padding: 6px;
+  background: #f6f2ff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.role-tabs button {
+  border: none;
+  background: transparent;
+  height: 48px;
+  border-radius: 14px;
+  font-weight: 800;
+  color: #6b687a;
+  cursor: pointer;
+}
+
+.role-tabs button.active {
+  background: white;
+  color: #7c3aed;
+  box-shadow: 0 8px 22px rgba(80, 60, 160, 0.12);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card {
+    padding: 30px 22px;
+  }
+}
+.auth-error {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #fff1f2;
+  color: #e11d48;
+  font-weight: 700;
+  font-size: 14px;
+}

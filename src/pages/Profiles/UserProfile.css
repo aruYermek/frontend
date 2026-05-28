@@ -1,0 +1,41 @@
+.profile-info input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #e7e2f3;
+  border-radius: 16px;
+  outline: none;
+}
+
+.profile-info input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px #f3edff;
+}
+
+.save-profile-btn {
+  margin-top: 30px;
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #ec4899
+  );
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #e11d48;
+  font-weight: 700;
+}

@@ -1,0 +1,60 @@
+.user-events-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #18122b;
+}
+
+.user-events-header p {
+  margin-top: 10px;
+  color: #6b687a;
+  font-size: 18px;
+}
+
+.events-filters {
+  margin-top: 35px;
+  display: flex;
+  gap: 18px;
+}
+
+.events-filters input,
+.events-filters select {
+  height: 56px;
+  border: 1px solid #e7e2f3;
+  border-radius: 18px;
+  padding: 0 18px;
+  outline: none;
+  background: white;
+}
+
+.events-filters input {
+  flex: 1;
+}
+
+.events-filters input:focus,
+.events-filters select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px #f3edff;
+}
+
+.user-events-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+@media (max-width: 1200px) {
+  .user-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .events-filters {
+    flex-direction: column;
+  }
+
+  .user-events-grid {
+    grid-template-columns: 1fr;
+  }
+}
